@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Meeting Assistant</h1>
+        <div>
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="en-US">English (US)</option>
+                <option value="es-ES">Spanish (Spain)</option>
+                <option value="fr-FR">French (France)</option>
+                <option value="de-DE">German (Germany)</option>
+                <option value="it-IT">Italian (Italy)</option>
+            </select>
+        </div>
+        <button id="toggle-button">Start/Stop Recording</button>
+        <p>Status: <span id="status">Idle</span></p>
+        <div id="transcript-container">
+            <h2>Live Transcript</h2>
+            <p id="transcript"></p>
+        </div>
+        <div id="analysis-container">
+            <h2>AI Analysis</h2>
+            <div id="analysis"></div>
+        </div>
+        <div id="search-container">
+            <h2>Search Past Meetings</h2>
+            <input type="text" id="search-input" placeholder="Enter search term...">
+            <button id="search-button">Search</button>
+            <div id="search-results"></div>
+        </div>
+        <div id="integration-container">
+            <h2>Platform Integration</h2>
+            <p>To use the Meeting Assistant with your favorite video conferencing platform, you'll need to route the audio to the app using a virtual audio cable.</p>
+            <h3>Setup Instructions:</h3>
+            <ol>
+                <li><strong>Install a virtual audio cable:</strong> We recommend <a href="https://vb-audio.com/Cable/" target="_blank">VB-CABLE</a> for Windows or <a href="https://github.com/ExistentialAudio/BlackHole" target="_blank">BlackHole</a> for macOS.</li>
+                <li><strong>Set the virtual cable as your system's output:</strong> In your system's sound settings, select the virtual audio cable as the default output device.</li>
+                <li><strong>Set the virtual cable as your meeting app's speaker:</strong> In your video conferencing app (Zoom, Teams, etc.), go to the audio settings and select the virtual audio cable as the speaker.</li>
+                <li><strong>Start the Meeting Assistant:</strong> Click the "Start/Stop Recording" button above to begin receiving audio.</li>
+            </ol>
+        </div>
+        <div id="knowledge-base-container">
+            <h2>Custom Knowledge Base</h2>
+            <div id="knowledge-base-list"></div>
+            <h3>Add New Term</h3>
+            <form id="knowledge-base-form">
+                <input type="text" id="kb-term" placeholder="Term" required>
+                <input type="text" id="kb-definition" placeholder="Definition" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

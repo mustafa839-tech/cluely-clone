@@ -1,0 +1,4 @@
+websockets
+google-cloud-speech
+openai
+aiohttp

@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+#transcript-container, #analysis-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#transcript {
+    min-height: 50px;
+}
+
+#analysis {
+    min-height: 100px;
+}
+
+#search-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#search-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 8px 12px;
+}
+
+#search-results {
+    margin-top: 10px;
+    min-height: 50px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+#integration-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#integration-container ol {
+    padding-left: 20px;
+}
+
+#knowledge-base-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#knowledge-base-list {
+    margin-bottom: 15px;
+}
+
+#knowledge-base-form input {
+    width: 40%;
+    padding: 8px;
+    margin-right: 10px;
+}
